@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPF_Layout.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image Source="{Binding Path=BitmapImage}"
+               HorizontalAlignment="Left" Height="149"
+               Margin="10,10,0,0" VerticalAlignment="Top"
+               Width="200"/>
+        <Button Content="Load" Click="Button_Click"
+                HorizontalAlignment="Left" Margin="227,10,0,0"
+                VerticalAlignment="Top" Width="55"/>
+    </Grid>
+</Window>
